@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+body {
+text-align: center;
+background-color: black;
+color: green;
+}
+h1 {
+color: red;
+}
+.btn {
+background-color: brown;
+border: 1.5px dashed white;
+height: 2rem;
+border-radius: 2px;
+width: 60%;
+margin: 2rem auto;
+display: block;
+color: #0197F6;
+outline: none;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>10 YEARS OF GUVI</h1>
+<button onclick="createTable()" class="btn">CLICK HERE</button>
+<script>
+function createTable() {
+var table = document.createElement("TABLE");
+table.innerHTML = `<tr>
+<td>GUVI DATA</td>
+<td>ZEN DATA</td>
+</tr>
+<tr>
+<td>ADDITIONAL SESSION</td>
+<td>DAILY TASKS</td>
+</tr>
+`;
+table.setAttribute('border', "2");
+table.style.margin = "2rem auto";
+document.body.appendChild(table);
+}
+</script>
+</body>
+</html>
